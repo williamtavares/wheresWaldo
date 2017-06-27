@@ -7,6 +7,9 @@ $(document).ready( function() {
         // console.log("Mouse Over Amnt: " + hoverOverValue);
         if(hoverOverValue <= maxHoverAmountBeforeWaldoIsClickable) {
             $(this).hide();
+        } else {
+            alert("You found me!");
+            location.reload();
         }
         return;
     });
