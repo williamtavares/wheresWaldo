@@ -34,37 +34,41 @@ function showWaldo() {
         case (randNum < 3):
             $("img#waldo").attr('src', 'images/waldo-bottom.png');
             $("img#waldo").css(positionBottom); //This will set the image location to one of the 4 screen sides
-            $("img#waldo").show();
-            $("img#waldo").css({"right": randLocation}); //This will set the image location to a random generated value
-            $("img#waldo").animate({height: "50px"}); //Show Waldo and animate
-            hideWaldo();
+            $("img#waldo").show(function(){
+                $("img#waldo").css({"right": randLocation}); //This will set the image location to a random generated value
+                $("img#waldo").animate({height: "50px"}); //Show Waldo and animate
+                hideWaldo();
+            });
             break;
         //Position left side of screen
         case (randNum >= 3 && randNum < 6):
             $("img#waldo").attr('src', 'images/waldo-left.png');
             $("img#waldo").css(positionLeft); //This will set the image location to one of the 4 screen sides
-            $("img#waldo").show();
-            $("img#waldo").css({"top": randLocation}); //This will set the image location to a random generated value
-            $("img#waldo").animate({width: "50px"}); //Show Waldo and animate
-            hideWaldo();
+            $("img#waldo").show(function() {
+                $("img#waldo").css({"top": randLocation}); //This will set the image location to a random generated value
+                $("img#waldo").animate({width: "50px"}); //Show Waldo and animate
+                hideWaldo();    
+            });
             break;
         //Position right side of screen                
         case (randNum >= 6 && randNum < 9):
             $("img#waldo").attr('src', 'images/waldo-right.png');
             $("img#waldo").css(positionRight); //This will set the image location to one of the 4 screen sides
-            $("img#waldo").show();
-            $("img#waldo").css({"top": randLocation}); //This will set the image location to a random generated value
-            $("img#waldo").animate({width: "50px"}); //Show Waldo and animate
-            hideWaldo();
+            $("img#waldo").show(function() {
+                $("img#waldo").css({"top": randLocation}); //This will set the image location to a random generated value
+                $("img#waldo").animate({width: "50px"}); //Show Waldo and animate
+                hideWaldo();
+            });
             break;
         //Position top of screen    
         case (randNum >= 9 && randNum < 12):
             $("img#waldo").attr('src', 'images/waldo-top.png');
             $("img#waldo").css(positionTop); //This will set the image location to one of the 4 screen sides
-            $("img#waldo").show();
-            $("img#waldo").css({"right": randLocation}); //This will set the image location to a random generated value
-            $("img#waldo").animate({height: "50px"}); //Show Waldo and animate
-            hideWaldo();
+            $("img#waldo").show(function() {
+                $("img#waldo").css({"right": randLocation}); //This will set the image location to a random generated value
+                $("img#waldo").animate({height: "50px"}); //Show Waldo and animate
+                hideWaldo();                
+            });
             break;                                                
     }
 }
