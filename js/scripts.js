@@ -17,7 +17,7 @@ $(document).ready( function() {
 });
 
 var hoverOverValue = 0;
-var maxHoverAmountBeforeWaldoIsClickable = 4;
+var maxHoverAmountBeforeWaldoIsClickable = 2;
 var waldoTimeInterval = 5;
 var hideWaldoAfterSeconds = 2;
 
@@ -39,7 +39,7 @@ function showWaldo() {
             $("img#waldo").css(positionBottom); //This will set the image location to one of the 4 screen sides
             $("img#waldo").show(function(){
                 $("img#waldo").css({"right": randLocation}); //This will set the image location to a random generated value
-                $("img#waldo").animate({height: "50px"}); //Show Waldo and animate
+                $("img#waldo").animate({height: "35px"}); //Show Waldo and animate
                 hideWaldo();
             });
             break;
@@ -49,7 +49,7 @@ function showWaldo() {
             $("img#waldo").css(positionLeft); //This will set the image location to one of the 4 screen sides
             $("img#waldo").show(function() {
                 $("img#waldo").css({"top": randLocation}); //This will set the image location to a random generated value
-                $("img#waldo").animate({width: "50px"}); //Show Waldo and animate
+                $("img#waldo").animate({width: "35px"}); //Show Waldo and animate
                 hideWaldo();    
             });
             break;
@@ -59,7 +59,7 @@ function showWaldo() {
             $("img#waldo").css(positionRight); //This will set the image location to one of the 4 screen sides
             $("img#waldo").show(function() {
                 $("img#waldo").css({"top": randLocation}); //This will set the image location to a random generated value
-                $("img#waldo").animate({width: "50px"}); //Show Waldo and animate
+                $("img#waldo").animate({width: "35px"}); //Show Waldo and animate
                 hideWaldo();
             });
             break;
@@ -69,7 +69,7 @@ function showWaldo() {
             $("img#waldo").css(positionTop); //This will set the image location to one of the 4 screen sides
             $("img#waldo").show(function() {
                 $("img#waldo").css({"right": randLocation}); //This will set the image location to a random generated value
-                $("img#waldo").animate({height: "50px"}); //Show Waldo and animate
+                $("img#waldo").animate({height: "35px"}); //Show Waldo and animate
                 hideWaldo();                
             });
             break;                                                
